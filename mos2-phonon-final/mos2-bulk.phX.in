@@ -1,0 +1,9 @@
+  &inputph
+    tr2_ph=1.0d-12,
+    niter_ph = 70,
+    prefix='mos2-bulk_',
+    alpha_mix(1) = 0.4,  
+    ldisp=.true.,
+    fildyn='<output dyn. mat.>',
+    nq1=7,nq2=7,nq3=3
+  /

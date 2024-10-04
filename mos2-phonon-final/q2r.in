@@ -1,0 +1,5 @@
+ &input
+   fildyn='<phonon input>', 
+   zasr='simple', 
+   flfrc='<output>'
+ /

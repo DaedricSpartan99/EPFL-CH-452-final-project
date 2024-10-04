@@ -1,0 +1,52 @@
+&CONTROL
+  calculation = 'scf'
+  etot_conv_thr =   6.0000000000d-05
+  forc_conv_thr =   1.0000000000d-04
+  tstress=.true.,                       ! compute stress
+  tprnfor=.true.,                       ! compute forces
+  outdir='outputs',                     ! output directory
+  prefix='mos2-bulk_',
+  pseudo_dir='pseudo',                  ! pseudo potential directory
+  verbosity='debug',                    ! verbosity level
+/
+
+&SYSTEM
+  ecutrho =   280  ! cutoff energy for the density
+  ecutwfc =   40   ! cutoff energy for the wave function
+  ibrav = 0                     ! free structure
+  nat = 6
+  nosym = .false.
+  ntyp = 2
+  occupations = 'fixed'
+  !occupations = 'smearing'
+  !smearing = 'cold'
+  !degauss =   1.4699723600d-02
+/
+
+&ELECTRONS
+  conv_thr =   1.2000000000d-09     ! convergence threshold
+  electron_maxstep = 80
+  mixing_beta =   4.0000000000d-01
+  diago_david_ndim = 4              ! higher dimension -> less time, more memory
+  scf_must_converge = .true.        ! ignore maxstep
+/
+
+ATOMIC_SPECIES
+Mo     95.96    Mo_ONCV_PBEsol-1.0.upf
+S      32.065   s_pbesol_v1.4.uspp.F.UPF
+
+ATOMIC_POSITIONS crystal
+Mo           0.3333333300       0.6666666700       0.2500000000 
+Mo           0.6666666700       0.3333333300       0.7500000000 
+S            0.6666666700       0.3333333300       0.3551740000 
+S            0.3333333300       0.6666666700       0.8551740000 
+S            0.6666666700       0.3333333300       0.1448260000 
+S            0.3333333300       0.6666666700       0.6448260000 
+
+K_POINTS {automatic}
+    13 13 4 1 1 1
+
+CELL_PARAMETERS angstrom
+      3.1903157000       0.0000000000       0.0000000000
+     -1.5951578500       2.7628944423       0.0000000000
+      0.0000000000       0.0000000000      14.8790040000

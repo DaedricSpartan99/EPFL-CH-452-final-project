@@ -1,0 +1,5 @@
+ &input
+   fildyn='outputs/mos2-X.dyn', 
+   zasr='simple', 
+   flfrc='outputs/analysis/mos2-X-4_4_12.fc'
+ /

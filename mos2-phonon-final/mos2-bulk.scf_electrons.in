@@ -1,0 +1,7 @@
+&ELECTRONS
+  conv_thr =   1.2-09 
+  electron_maxstep = 80
+  mixing_beta =   0.4
+  diago_david_ndim = 4              
+  scf_must_converge = .true.      
+/

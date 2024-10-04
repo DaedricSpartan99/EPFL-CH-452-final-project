@@ -1,0 +1,10 @@
+ &input
+    asr='simple',  
+    amass(1)=95.940000d0, 
+    amass(2)=32.065000d0,
+    flfrc='<q2r input>', 
+    flfrq='<output>', 
+    q_in_band_form=.true.,
+    q_in_cryst_coord=.true.
+ /
+<k-points integration path>

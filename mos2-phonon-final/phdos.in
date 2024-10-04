@@ -1,0 +1,9 @@
+ &input
+    asr='simple',  
+    amass(1)=95.940000d0, 
+    amass(2)=32.065000d0,
+    dos=.true.,
+    flfrc='outputs/analysis/mos2-X-4_4_12.fc', 
+    fldos='outputs/analysis/mos2.phdos', 
+    nk1=8,nk2=8,nk3=4
+ /

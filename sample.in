@@ -1,0 +1,25 @@
+
+&SYSTEM
+    ibrav=4,                
+    nat=6,                  
+    ntyp=2,                 
+    celldm(1) = 3.190d0,    
+    celldm(3) = 4.6642d0,   
+/
+
+ATOMIC_SPECIES
+    Mo  95.940000d0  Mo.pbesol-spn-kjpaw_psl.1.0.0.UPF
+    S   32.065000d0  S.pbe-n-kjpaw_psl.1.0.0.UPF
+
+
+ATOMIC_POSITIONS crystal                      
+    Mo  0.3333333333d0  0.6666666666d0  0.25d0
+    Mo  0.6666666667d0  0.3333333333d0  0.75d0
+    S   0.3333333333d0  0.6666666666d0  0.8552d0
+    S   0.3333333333d0  0.6666666666d0  0.6448d0
+    S   0.6666666667d0  0.3333333333d0  0.3552d0
+    S   0.6666666667d0  0.3333333333d0  0.1448d0
+
+K_POINTS automatic
+    4 4 12 0 0 0
+

@@ -1,0 +1,14 @@
+phonons of MoS2 at X
+&inputph
+  tr2_ph=1.0d-12,
+  niter_ph = 50,
+  !la2f=.true.,                       ! save eigenvalues
+  prefix='mos2-bulk_',
+  alpha_mix(1) = 0.3,                 ! 0.1, default 0.7
+  !nmix_ph = 15,                       ! speed-up convergence, default 4
+  ldisp=.true.,
+  fildyn='outputs/mos2-X.dyn',
+  outdir='outputs',
+  verbosity='debug',
+  nq1=3, nq2=3, nq3=3,
+/

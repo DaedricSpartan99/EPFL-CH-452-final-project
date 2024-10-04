@@ -1,0 +1,33 @@
+set encoding iso_8859_15
+set terminal postscript enhanced solid color "Helvetica" 20
+set output "mos2.dispersions.ps"
+#
+set key off
+
+set xrange [0:4.1825]
+dim=500
+set yrange [-100:dim]
+set arrow from 0.5774,0. to 0.5774,dim nohead  lw 2
+set arrow from 0.9107,0. to 0.9107,dim nohead  lw 2
+set arrow from 1.5773,0. to 1.5773,dim nohead  lw 2
+set arrow from 1.6846,0. to 1.6846,dim nohead  lw 2
+set arrow from 2.2619,0. to 2.2619,dim nohead  lw 2
+set arrow from 2.5952,0. to 2.5952,dim nohead  lw 2
+set arrow from 3.2619,0. to 3.2619,dim nohead  lw 2
+set arrow from 4.1825,0. to 4.1825,dim nohead  lw 2
+set ylabel "frequency (cm^{-1})"
+unset xtics
+lpos=-15
+
+set label "{/Symbol G}" at -0.05,lpos
+set label "M" at 0.5774,lpos
+set label "K" at 0.9107,lpos
+set label "{/Symbol G}" at 1.5773,lpos
+set label "A" at 1.6846,lpos
+set label "L" at 2.2619,lpos
+set label "H" at 2.5952,lpos
+set label "A" at 3.2619,lpos
+set label "M" at 3.8491,lpos
+set label "K" at 4.1825,lpos
+
+plot "freq.plot" u 1:2 w l lw 3  
